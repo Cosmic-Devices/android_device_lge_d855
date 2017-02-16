@@ -18,14 +18,14 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common AOSP stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/cos/common.mk)
 
 # Inherit from d855 device
 $(call inherit-product, device/lge/d855/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := d855
-PRODUCT_NAME := aosp_d855
+PRODUCT_NAME := cos_d855
 PRODUCT_BRAND := lge
 PRODUCT_MODEL := LG-D855
 PRODUCT_MANUFACTURER := LGE
